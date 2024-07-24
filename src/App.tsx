@@ -1,5 +1,11 @@
+import Homework_15 from "homeworks/Homework_15/Homework_15"
+
 function App() {
-  return <div>React Redux project</div>
+  return (
+    <>
+      <Homework_15 />
+    </>
+  )
 }
 
 export default App
