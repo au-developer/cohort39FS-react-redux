@@ -15,7 +15,7 @@ import { PageWrapper } from "./styles"
 function Homework_16() {
   // ШАГ-15 вызов хуков
   const dispatch = useAppDispatch()
-  //ШАГ-17 - передача в хук подписки
+  //ШАГ-17 - передача в хук подписки- ПОДПИСКА
   const feedbackCountLikes = useAppSelector(
     feedbackSliceSelectors.feedbackCountLikes,
   )
@@ -25,7 +25,7 @@ function Homework_16() {
 
   // ШАГ-18/1 пишем функции для лайка, дизлайка,резета - используем диспатч, в аргумент ему- импортировать необходимый ексшен
   const onLike = () => {
-    dispatch(feedbackSliceAction.like())
+    dispatch(feedbackSliceAction.like()) // метод like ето метод actionCreator, который создает Action
   }
   const onDislike = () => {
     dispatch(feedbackSliceAction.dislike())
